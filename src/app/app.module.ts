@@ -17,6 +17,7 @@ import { SignupComponent } from './Pages/signup/signup.component';
 import {FormsModule} from "@angular/forms";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {MatTableModule} from "@angular/material/table";
+import { MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import {MatTableModule} from "@angular/material/table";
     HttpClientModule,
     FormsModule,
     NgbModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
