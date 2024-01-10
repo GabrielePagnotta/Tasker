@@ -1,0 +1,36 @@
+
+<div (click)="openDialog()" class="add-button d-flex align-items-center">
+  <i class="fa-solid fa-plus"></i>
+  <p class="my-0 mx-2">Add Task</p>
+</div>
+<table style="margin-top:50px " mat-table [dataSource]="tasks" class="mat-elevation-z8 custom-table">
+
+
+  <ng-container matColumnDef="Task_name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.Task_name}}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="Task_description">
+    <th mat-header-cell *matHeaderCellDef> Description </th>
+    <td mat-cell *matCellDef="let element"> {{element.Task_description}} </td>
+  </ng-container>
+  <ng-container matColumnDef="Task_creation">
+    <th mat-header-cell *matHeaderCellDef> Date of creation </th>
+    <td mat-cell *matCellDef="let element"> {{element.Task_creation}} </td>
+  </ng-container>
+  <ng-container matColumnDef="Manage">
+    <th mat-header-cell *matHeaderCellDef> Manage </th>
+    <td mat-cell *matCellDef="let element"> <i class="fa-solid fa-check"></i> <i class="fa-solid fa-pen mx-2"></i> <i (click)="delete(element)" class="fa-solid fa-trash-can"></i> </td>
+  </ng-container>
+  <ng-container matColumnDef="Task_hours">
+    <th mat-header-cell *matHeaderCellDef> Hours </th>
+    <td mat-cell *matCellDef="let element"> {{element.Task_hours}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+
+

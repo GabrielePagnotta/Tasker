@@ -1,0 +1,29 @@
+.page{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:rgba(31, 142, 197,0.6) ;
+}
+
+.signup-box{
+  z-index: 1;
+  width: 25%;
+  height: 40%;
+  background-color: #1f8ec5;
+  border-radius: 20px;
+  padding: 50px;
+  -webkit-box-shadow: -15px 10px 17px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: -15px 10px 17px -7px rgba(0,0,0,0.75);
+  box-shadow: -15px 10px 17px -7px rgba(0,0,0,0.75);
+}
+.btnon{
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+  width: 40%;
+}
+
+

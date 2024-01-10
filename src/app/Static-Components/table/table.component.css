@@ -1,0 +1,43 @@
+table {
+  width: 100%;
+}
+
+.fa-trash-can{
+  background-color: darkred !important;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 10px;
+  color: white !important;
+  cursor: pointer !important;
+}
+
+.fa-pen{
+  background-color: #d7b511 !important;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 10px;
+  color: white !important;
+  cursor: pointer !important;
+}
+.fa-check{
+  background-color: forestgreen !important;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 10px;
+  color: white !important;
+  cursor: pointer !important;
+}
+.add-button{
+  background-color: forestgreen;
+  color: white;
+  width: 110px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-task-button{
+  background-color: forestgreen;
+  color: white;
+  padding: 10px;
+}
